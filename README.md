@@ -1,2 +1,2 @@
 # federal-register-query
-How to query the federal register API with Python
+An example of how to query the federal register API with Python
