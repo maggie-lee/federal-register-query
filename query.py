@@ -22,8 +22,10 @@ params = {'per_page': 1000,
 data = urllib.parse.urlencode(params)
 
 # Then this smushes together the base url and a question mark and your encoded search parameters and calls it
-req = urllib.request.Request(url + '?' + data)
+response = requests.get(url + '?' + data)
 
-# the json response is in this line
-response = urllib.request.urlopen(req)
-print(response.read())
+# a response in bytes:
+byte_response = response.content
+
+# a response as a json object:
+json_response = response.json()
