@@ -1,5 +1,5 @@
-from urllib.request import Request
 import urllib.parse
+import requests
 
 # This is the base url you'll need to query federalregister.gov
 
